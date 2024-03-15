@@ -10,6 +10,9 @@
     "prepare": "husky install",
     "commit": "git-cz"
   },
+  "prisma": {
+    "seed": "./node_modules/.bin/ts-node prisma/seed.ts"
+  },
   "lint-staged": {
     "*.{js,ts,jsx,tsx}": [
       "eslint --fix",
@@ -51,6 +54,7 @@
     "prettier": "^3.2.5",
     "prisma": "^5.11.0",
     "tailwindcss": "^3.3.0",
+    "ts-node": "^10.9.2",
     "typescript": "^5"
   }
 }
