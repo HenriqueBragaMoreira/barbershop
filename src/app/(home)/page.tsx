@@ -1,3 +1,4 @@
+import { BookingItem } from '@/components/booking-item';
 import { Header } from '@/components/header';
 import { format } from 'date-fns';
 import { ptBR } from 'date-fns/locale';
@@ -19,6 +20,11 @@ export default function Home() {
 
       <div className="px-5 mt-6">
         <Search />
+      </div>
+
+      <div className="px-5 mt-6">
+        <h2 className="text-xs mb-3 uppercase text-gray-400 font-bold">Agendamentos</h2>
+        <BookingItem />
       </div>
     </div>
   );
