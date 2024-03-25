@@ -2,7 +2,7 @@ module.exports = {
   extends: ['next', 'prettier', 'next/core-web-vitals'],
   plugins: ['react', 'react-hooks', 'prettier'],
   rules: {
-    quotes: ['error', 'single'],
+    quotes: ['error', 'single', { avoidEscape: true }],
     semi: ['error', 'always'],
     'no-unused-vars': [
       'error',
